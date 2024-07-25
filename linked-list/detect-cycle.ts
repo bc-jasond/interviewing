@@ -18,16 +18,7 @@
  - start two pointers at the head, increment one by 1 and the other by 2, there's a cycle if both pointers ever point to the same element
 
  */
-type MaybeNode = ListNode | null | undefined
-
- class ListNode {
-     val: number
-     next: MaybeNode
-     constructor(val?: number, next?: MaybeNode) {
-         this.val = (val===undefined ? 0 : val)
-         this.next = (next===undefined ? null : next)
-     }
- }
+import { ListNode, type MaybeNode } from "./list-node"
 
  function hasCycle(head: MaybeNode): boolean {
   let slow = head
