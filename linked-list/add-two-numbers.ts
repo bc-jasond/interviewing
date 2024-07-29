@@ -37,14 +37,14 @@ Solution
  - OPTIMIZED - don't need to find lenghts - just use 0 if node.next === null
  */
 
-import { ListNode, MaybeNode } from "./list-node";
+import { ListNode, MaybeListNode } from "./list-node";
 
- function addTwoNumbers(l1: MaybeNode, l2: MaybeNode): MaybeNode {
+ function addTwoNumbers(l1: MaybeListNode, l2: MaybeListNode): MaybeListNode {
   let carry = 0
-  let first: MaybeNode = l1
+  let first: MaybeListNode = l1
   let second = l2
-  let resultHead: MaybeNode = undefined
-  let resultLast: MaybeNode = undefined
+  let resultHead: MaybeListNode = undefined
+  let resultLast: MaybeListNode = undefined
   while (first || second) {
       let firstValue = first?.val || 0
       first = first?.next

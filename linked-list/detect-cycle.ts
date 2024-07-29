@@ -18,9 +18,9 @@
  - start two pointers at the head, increment one by 1 and the other by 2, there's a cycle if both pointers ever point to the same element
 
  */
-import { ListNode, type MaybeNode } from "./list-node"
+import { ListNode, type MaybeListNode } from "./list-node"
 
- function hasCycle(head: MaybeNode): boolean {
+ function hasCycle(head: MaybeListNode): boolean {
   let slow = head
   let fast = head?.next
   while (slow) {
