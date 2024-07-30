@@ -64,6 +64,6 @@ class MyHashMap {
   }
 
   remove(key: number): void {
-      this.storage[key] = undefined
+      delete this.storage[key]
   }
 }
