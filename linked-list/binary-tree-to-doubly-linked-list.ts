@@ -66,25 +66,3 @@ function DLLFromArray(input: number[]) {
 
 const test = DLLFromArray(inOrderToDLL(bst1))
 test?.print()
-
-const head = new ListNode(25)
-const node2 = new ListNode(12)
-head.next = node2
-node2.prev = head
-const node3 = new ListNode(30)
-node2.next = node3
-node3.prev = node2
-const node4 = new ListNode(10)
-node3.next = node4
-node4.prev = node3
-const node5 = new ListNode(36)
-node4.next = node5
-node5.prev = node4
-const node6 = new ListNode(15)
-node5.next = node6
-node6.prev = node5
-
-
-head.print()
-console.log(' ')
-
