@@ -40,14 +40,14 @@ function isPalindrome(s: string): boolean {
   const lowers = 'abcdefghijklmnopqrstuvwxyz'
   const numbers = '0123456789'
   const getChar = (c: string) => {
-      if (lowers.indexOf(c) > -1 || numbers.indexOf(c) > -1) {
-          return c
-      }
-      const uppersIndex = uppers.indexOf(c)
-      if (uppersIndex > -1) {
-          return lowers[uppersIndex]
-      }
-      return undefined
+    if (lowers.indexOf(c) > -1 || numbers.indexOf(c) > -1) {
+        return c
+    }
+    const uppersIndex = uppers.indexOf(c)
+    if (uppersIndex > -1) {
+        return lowers[uppersIndex]
+    }
+    return undefined
   }
   let l = 0
   let lCurrent
